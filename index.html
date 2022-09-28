@@ -1,0 +1,70 @@
+<html>
+<head>
+<style>
+* {
+ font-family: Verdana, Geneva, Arial, sans-serif !important;
+font-size: larger;
+color: ghostwhite;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #111;
+}
+.button {
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 54px;
+	outline: none;
+	background-color: #333;
+	color: #fff;
+	border-radius: 8px;
+}
+
+.textbox {
+	display: inline-block;
+	width: 200px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 54px;
+	outline: none;
+	background-color: #333;
+	color: #fff;
+	border: aliceblue;
+	border-radius: 8px;
+
+}
+</style>
+<script>
+function btn() {
+	var pw = document.getElementById("pw").value;
+	if(pw == "민트맛마라탕"){
+	document.write("정답입니다! <br>");
+		document.write("https://www.youtube.com/watch?v=Il1EPFKim1o");
+	} else{
+		alert("삐빅! 오답입니다");
+	}
+}
+</script>
+</head>
+<body>
+<div id="hello">
+반갑습니다 홍서연님.
+</div>
+<br>
+<div id="input">
+비밀번호를 입력하세요 : 
+<input type="text" id="pw" name="pw" class="textbox" required
+       minlength="4" maxlength="8" size="10" onkeyup="if(window.event.keyCode==13){btn()}"></body>
+<input class="button"
+       type="button"
+       value="확인" 
+onclick="btn();">
+</div>
+</html>
